@@ -193,7 +193,48 @@ if menu_selection == 1:
 
 
 if menu_selection == 2:
-    print("2")
+    
+    score =0
+    
+    print('''
+          - === - Coding Quiz - === -
+          
+          Welcome to the Coding Quiz
+          
+          - This is multiple choice
+            so pick the number that 
+            corresponds to your 
+            answer
+    ''')
+    
+    print('''Question one: What is this statement coded in?
+        
+                console.log("Hello, World!");
+
+             1. Java   2. C++   3. C#   4. JavaScript
+             
+          ''')
+    q1_response = int(input("Your answer > "))
+    if q1_response == 4:
+        print("Well Done!")
+        score = score +1
+        print(f"You have 1 point!")
+    if q1_response > 4 or q1_response < 1:
+        print("Invalid Selection")
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 if menu_selection == 3:
     print("3")
