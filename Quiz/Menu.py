@@ -224,6 +224,7 @@ if menu_selection == 2:
         print("Well Done!")
         score = score +1
         print(f"You have 1 point!")
+        time.sleep(0.6) 
         
     if q1_response > 4 or q1_response < 1:
         print("Invalid Selection")
@@ -236,8 +237,74 @@ if menu_selection == 2:
                   The right answer is 4. JavaScript!
                   you have {score} Points!
               ''')        
+        time.sleep(0.6) 
     
-    
+    #Question 2
+    print('''Question two: What language is this coded in?
+        
+             self.root.geometry("600x400")
+
+             1. HTML   2. Python    3. C#   4. Ruby
+             
+          ''')
+    q2_response = int(input("Your answer > "))
+ 
+    #correct/incorrect/invalid
+    if q2_response == 2:
+        print("Well Done!")
+        score = score +1
+        print(f"You have {score} point(s)!")
+        
+    if q2_response > 4 or q2_response < 1:
+        print("Invalid Selection")
+        time.sleep(0.7)
+        print("Onto the next question!")
+        time.sleep(0.6) 
+        
+    if q2_response != 2:
+        print(f'''Sorry number {q2_response} is wrong!
+                  The right answer is 2. Python!
+                  you have {score} Point(s)!
+              ''')    
+        
+        
+        
+        
+        
+        
+        
+    #Question 3
+    print('''Question three: What language is this coded in?
+        
+             #include <iostream>
+
+             int main() {
+                 std::cout << "Hello, World!" << std::endl;
+                 return 0;
+             }
+
+             1. Rust   2. Swift    3. C++   4. HTML
+             
+          ''')
+    q3_response = int(input("Your answer > "))
+ 
+    #correct/incorrect/invalid
+    if q3_response == 3:
+        print("Well Done!")
+        score = score +1
+        print(f"You have {score} point(s)!")
+        
+    if q3_response > 4 or q3_response < 1:
+        print("Invalid Selection")
+        time.sleep(0.7)
+        print("Onto the next question!")
+        time.sleep(0.6) 
+        
+    if q3_response != 2:
+        print(f'''Sorry number {q3_response} is wrong!
+                  The right answer is 2. creates a window with the size 600x400!
+                  you have {score} Point(s)!
+              ''')    
     
     
     
