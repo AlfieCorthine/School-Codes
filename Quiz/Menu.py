@@ -190,3 +190,13 @@ if menu_selection == 1:
     time.sleep(1.5)
     print("***SUPPORT ME ON TWITTER AND GITHUB***")
     time.sleep(1.5)
+
+
+if menu_selection == 2:
+    print("2")
+    
+if menu_selection == 3:
+    print("3")
+    
+if menu_selection == 4:
+    print("4")
