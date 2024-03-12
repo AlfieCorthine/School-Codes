@@ -10,9 +10,9 @@ print('''
       3. Number Guess
       4. Calculator
 ''')    
-
+#menu selection
 menu_selection = int(input("Please enter your menu selection > "))
-
+#menu selection 1 - Blackjack
 if menu_selection == 1:
     
     H = False
@@ -188,14 +188,42 @@ if menu_selection == 1:
     time.sleep(2)
     print("**********THANKS FOR PLAYING**********")
     time.sleep(1.5)
-    print("***SUPPORT ME ON TWITTER AND GITHUB***")
+    print("*********SUPPORT ME ON GITHUB*********")
     time.sleep(1.5)
+
+#menu selection 2 - Quiz
+Question_num = 0  
 
 
 if menu_selection == 2:
-    
+    Q3 = '''
+            #include <iostream>
+
+            int main() {
+                std::cout << "Hello, World!" << std::endl;
+                return 0;
+            }
+'''
+
+    Q4 = '''
+            fn main() {
+                println!("Hello, world!");
+            }
+'''
     score =0
     
+    questions = ["Question one: What is this statement coded in?", "Question two: What language is this coded in?", "Question three: What language is this coded in?", "Question four: What language is this coded in?", "Question five: What language is this coded in?"]
+    statement = ["console.log('Hello, World!');", "self.root.geometry('600x400')", Q3, Q4, "puts 'Hello, World!'"]
+
+    def update_score(Question_num, target_number, current_score):
+    if Question_num == target_number:
+        current_score += 1
+        print("Score updated! New score:", current_score)
+    else:
+        print("Variable does not equal the target number. Score remains unchanged.")
+
+
+
     print('''
           - === - Coding Quiz - === -
           
@@ -207,40 +235,15 @@ if menu_selection == 2:
             answer
     ''')
     
-    print('''Question one: What is this statement coded in?
-        
-                console.log("Hello, World!");
-
-             1. Java   2. C++   3. C#   4. JavaScript
-             
-          ''')
-    q1_response = int(input("Your answer > "))
-    if q1_response == 4:
-        print("Well Done!")
-        score = score +1
-        print(f"You have 1 point!")
-    if q1_response > 4 or q1_response < 1:
-        print("Invalid Selection")
-        time.sleep(0.7)
-        print("Onto the next question!")
-        time.sleep(0.6)
-        
+    time.sleep(1)
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+#menu selection 3
 if menu_selection == 3:
     print("3")
     
+    
+#menu selection 4   
 if menu_selection == 4:
     print("4")
