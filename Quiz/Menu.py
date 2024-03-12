@@ -12,7 +12,7 @@ print('''
 ''')    
 #menu selection
 menu_selection = int(input("Please enter your menu selection > "))
-#menu selection 1
+#menu selection 1 - Blackjack
 if menu_selection == 1:
     
     H = False
@@ -188,10 +188,10 @@ if menu_selection == 1:
     time.sleep(2)
     print("**********THANKS FOR PLAYING**********")
     time.sleep(1.5)
-    print("***SUPPORT ME ON TWITTER AND GITHUB***")
+    print("*********SUPPORT ME ON GITHUB*********")
     time.sleep(1.5)
 
-#menu selection 2
+#menu selection 2 - Quiz
 if menu_selection == 2:
     
     score =0
@@ -239,6 +239,8 @@ if menu_selection == 2:
               ''')        
         time.sleep(0.6) 
     
+
+
     #Question 2
     print('''Question two: What language is this coded in?
         
@@ -268,11 +270,7 @@ if menu_selection == 2:
               ''')    
         
         
-        
-        
-        
-        
-        
+
     #Question 3
     print('''Question three: What language is this coded in?
         
@@ -302,20 +300,80 @@ if menu_selection == 2:
         
     if q3_response != 2:
         print(f'''Sorry number {q3_response} is wrong!
-                  The right answer is 2. creates a window with the size 600x400!
+                  The right answer is 3. C++!
                   you have {score} Point(s)!
               ''')    
     
     
     
     
+    #Question 4        
+    time.sleep(0.75) 
+
+    print('''Question four: What language is this coded in? 
+            
+                fn main() {
+                    println!("Hello, world!");
+                }
+
+        ''')
+    print(" 1: Java     2: HTML     3: Rust     4: C++  ")
+    print("")
+    q4_selection = int(input("Your guess is > "))
+    if q4_selection == 3:
+        print("Correct!")
+        score = score +1
+        print(f"You have {score} point(s)!")
+
+    if q4_selection > 4 or q4_selection < 1:
+        print("Invalid Selection!")
+        time.sleep(1)
+        print("Onto the next question!")
+        time.sleep(0.7)
+
+    if q4_selection != 3:
+        print(f'''Sorry number {q4_selection} is wrong!
+                  The right answer is 3. C++!
+                  you have {score} Point(s)!
+              ''')  
     
     
+    #Question 5       
+    time.sleep(0.75) 
+
+    print('''Question five: What language is this coded in? 
+            
+                       puts "Hello, World!"
+          
+        ''')
+    print(" 1: Ruby   2: Sapphire   3: Assembly   4: HolyC  ")
+    print("")
+    q5_selection = int(input("Your guess is > "))
+    if q5_selection == 1:
+        print("Correct!")
+        score = score +1
+        print(f"You have {score} point(s)!")
+
+    if q5_selection > 4 or q5_selection < 1:
+        print("Invalid Selection!")
+        time.sleep(1)
+        print("Onto the next question!")
+        time.sleep(0.7)
+
+    if q5_selection != 1:
+        print(f'''Sorry number {q5_selection} is wrong!
+                  The right answer is 3. Ruby!
+                  you have {score} Point(s)!
+              ''')
     
-    
-    
-    
-    
+    print(f'''
+            Thats the end of the Quiz!
+            You scored {score}/5!
+    ''')
+    if score >3:
+        print("Well done!")
+    else:
+        print("Maybe you need to do some more revision!")
     
 #menu selection 3
 if menu_selection == 3:
