@@ -10,9 +10,9 @@ print('''
       3. Number Guess
       4. Calculator
 ''')    
-#menu selection
+
 menu_selection = int(input("Please enter your menu selection > "))
-#menu selection 1
+
 if menu_selection == 1:
     
     H = False
@@ -191,7 +191,7 @@ if menu_selection == 1:
     print("***SUPPORT ME ON TWITTER AND GITHUB***")
     time.sleep(1.5)
 
-#menu selection 2
+
 if menu_selection == 2:
     
     score =0
@@ -207,9 +207,6 @@ if menu_selection == 2:
             answer
     ''')
     
-    time.sleep(1)
-    
-    #Question 1
     print('''Question one: What is this statement coded in?
         
                 console.log("Hello, World!");
@@ -218,24 +215,16 @@ if menu_selection == 2:
              
           ''')
     q1_response = int(input("Your answer > "))
- 
-    #correct/incorrect/invalid
     if q1_response == 4:
         print("Well Done!")
         score = score +1
         print(f"You have 1 point!")
-        
     if q1_response > 4 or q1_response < 1:
         print("Invalid Selection")
         time.sleep(0.7)
         print("Onto the next question!")
-        time.sleep(0.6) 
+        time.sleep(0.6)
         
-    if q1_response != 4:
-        print(f'''Sorry number {q1_response} is wrong!
-                  The right answer is 4. JavaScript!
-                  you have {score} Points!
-              ''')        
     
     
     
@@ -250,11 +239,8 @@ if menu_selection == 2:
     
     
     
-#menu selection 3
 if menu_selection == 3:
     print("3")
     
-    
-#menu selection 4   
 if menu_selection == 4:
     print("4")
