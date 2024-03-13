@@ -214,13 +214,17 @@ if menu_selection == 2:
     
     questions = ["Question one: What is this statement coded in?", "Question two: What language is this coded in?", "Question three: What language is this coded in?", "Question four: What language is this coded in?", "Question five: What language is this coded in?"]
     statement = ["console.log('Hello, World!');", "self.root.geometry('600x400')", Q3, Q4, "puts 'Hello, World!'"]
+    selection = ["1. Java 2. C++ 3. C# 4. JavaScript", "1. HTML 2. Python 3. C# 4. Ruby", "1. Rust 2. Swift 3. C++ 4. HTML", "1: Java 2: HTML 3: Rust 4: C++", "1: Ruby 2: Sapphire 3: Assembly 4: HolyC"]
+    def update_score(Answer, target_number, score):
+        if Answer == target_number:
+            score += 1
+            print(f"Score updated! New score: {score}")
+        else:
+            print(f"score unchanged: {score}")
 
-    def update_score(Question_num, target_number, current_score):
-    if Question_num == target_number:
-        current_score += 1
-        print("Score updated! New score:", current_score)
-    else:
-        print("Variable does not equal the target number. Score remains unchanged.")
+
+
+
 
 
 
@@ -236,6 +240,11 @@ if menu_selection == 2:
     ''')
     
     time.sleep(1)
+    for i in range(1,5):
+        print(questions[i])
+        print(statement[i])
+    
+    
     
     
     
